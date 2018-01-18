@@ -1,0 +1,59 @@
+[Appium] Welcome to Appium v1.6.3
+[Appium] Non-default server args:
+[Appium]   port: 4490
+[Appium]   bootstrapPort: 2233
+[Appium]   udid: '79BQADR4XV6L8'
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"79BQADR4XV6L8"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: '79BQADR4XV6L8'
+[Appium] Appium REST http interface listener started on 0.0.0.0:4490
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"app":"G:\\Users\\HYM\\Desktop\\FlyBand.apk","appPackage":"com.hx.socialapp","appActivity":"com.hx.socialapp.SplashActivity","noSign":"True","newCommandTimeout":"600","automationName":"uiautomator2","unicodeKeyboard":"True","udid":"79BQADR4XV6L8","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"G:\\Users\\HYM\\Desktop\\FlyBand.apk","appPackage":"com.hx.socialapp","appActivity":"com.hx.socialapp.SplashActivity","noSign":"True","newCommandTimeout":"600","automationName":"uiautomator2","unicodeKeyboard":"True","udid":"79BQADR4XV6L8","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1505871540252 (09:39:00 GMT+0800 (中国标准时间))
+[Appium] Creating new AndroidUiautomator2Driver session
+[Appium] Capabilities:
+[Appium]   app: 'G:\\Users\\HYM\\Desktop\\FlyBand.apk'
+[Appium]   appPackage: 'com.hx.socialapp'
+[Appium]   appActivity: 'com.hx.socialapp.SplashActivity'
+[Appium]   noSign: 'True'
+[Appium]   newCommandTimeout: '600'
+[Appium]   automationName: 'uiautomator2'
+[Appium]   unicodeKeyboard: 'True'
+[Appium]   udid: '79BQADR4XV6L8'
+[Appium]   platformName: 'Android'
+[Appium]   deviceName: 'devicename'
+[Appium]   resetKeyboard: 'True'
+[BaseDriver] Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'resetKeyboard' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'noSign' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'newCommandTimeout' changed from string ('600') to integer (600). This may cause unexpected behavior
+[BaseDriver] Session created with session id: 5e9e596e-eb6b-40af-ab9e-8a40f0e50fd7
+[BaseDriver] Using local app 'G:\Users\HYM\Desktop\FlyBand.apk'
+[debug] [UiAutomator2] Checking whether app is actually present
+[debug] [UiAutomator2] Deleting UiAutomator2 session
+Error: This socket is closed
+    at Socket._writeGeneric (net.js:679:19)
+    at Socket._write (net.js:730:8)
+    at doWrite (_stream_writable.js:331:12)
+    at writeOrBuffer (_stream_writable.js:317:5)
+    at Socket.Writable.write (_stream_writable.js:243:11)
+    at Socket.write (net.js:657:40)
+    at Socket.stream.write (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_ansi@0.3.1@ansi\lib\newlines.js:36:21)
+    at Console.log (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_winston@2.3.1@winston\lib\winston\transports\console.js:119:20)
+    at transportLog (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_winston@2.3.1@winston\lib\winston\logger.js:234:15)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_async@1.0.0@async\lib\async.js:157:13
+    at _each (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_async@1.0.0@async\lib\async.js:57:9)
+    at Object.async.each (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_async@1.0.0@async\lib\async.js:156:9)
+    at Logger.log (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_winston@2.3.1@winston\lib\winston\logger.js:246:9)
+    at target.(anonymous function) [as error] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_winston@2.3.1@winston\lib\winston\common.js:54:18)
+    at EventEmitter.<anonymous> (../../lib/logsink.js:199:25)
+    at emitOne (events.js:96:13)
+    at EventEmitter.emit (events.js:188:7)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_npmlog@2.0.4@npmlog\log.js:158:8)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_npmlog@2.0.4@npmlog\log.js:231:21)
+    at asyncHandler$ (../../../lib/mjsonwp/mjsonwp.js:309:13)
+    at tryCatch (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_babel-runtime@5.8.24@babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_babel-runtime@5.8.24@babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_babel-runtime@5.8.24@babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\_babel-runtime@5.8.24@babel-runtime\regenerator\runtime.js:136:37)

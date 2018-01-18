@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="127.0.0.1:62001"
+           tests="23"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="548.554">
+  <properties />
+  
+  
+            <testcase name="login" time="19.081" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="login" time="18.728" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="regCase" time="20.143" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="forget" time="20.668" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="forget" time="20.115" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="forget" time="19.549" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="regCase" time="47.796" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="regCase" time="20.290" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="login" time="19.604" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="regCase" time="20.108" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="regCase" time="19.528" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="forget" time="20.633" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="forget" time="19.048" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="regCase" time="20.560" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="forget" time="91.219" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="login" time="18.354" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="regCase" time="20.503" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="forget" time="20.242" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="forget" time="18.341" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="login" time="17.905" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="login" time="19.117" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="login" time="17.336" classname="cn.crazy.appium.testcases.LoginRegister" />
+                <testcase name="regCase" time="19.686" classname="cn.crazy.appium.testcases.LoginRegister" />
+      
+</testsuite>

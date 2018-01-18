@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HGA7N5BS"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="133.692">
+  <properties />
+  
+  
+            <testcase name="changePerInfoTest" time="133.692" classname="cn.crazy.appium.testcases.PerInfoTest" />
+      
+</testsuite>

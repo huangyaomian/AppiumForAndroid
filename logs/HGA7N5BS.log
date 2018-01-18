@@ -1,0 +1,1601 @@
+[36minfo[39m: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+[36minfo[39m: Appium REST http interface listener started on 0.0.0.0:4490
+[36minfo[39m: [debug] Non-default server args: {"udid":"HGA7N5BS","port":4490,"bootstrapPort":2234}
+[36minfo[39m: Console LogLevel: debug
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m [90m{"desiredCapabilities":{"app":"G:\\Users\\HYM\\Desktop\\FlyBand.apk","appPackage":"com.createbest.app.a16.flyband","appActivity":"com.cb.a16.guide.WelcomeActivity","noSign":"True","newCommandTimeout":"600","automationName":"uiautomator2","unicodeKeyboard":"True","udid":"HGA7N5BS","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"}}[39m
+[36minfo[39m: Client User-Agent string: Apache-HttpClient/4.5.2 (Java/1.8.0_131)
+[33mwarn[39m: Converting cap noSign from string to boolean. This might cause unexpected behavior.
+[33mwarn[39m: Converting cap unicodeKeyboard from string to boolean. This might cause unexpected behavior.
+[33mwarn[39m: Converting cap resetKeyboard from string to boolean. This might cause unexpected behavior.
+[36minfo[39m: [debug] Using local app from desired caps: G:\Users\HYM\Desktop\FlyBand.apk
+[36minfo[39m: [debug] Creating new appium session b2822059-2487-4192-bbef-878c66c49c8f
+[36minfo[39m: Starting android appium
+[36minfo[39m: [debug] Getting Java version
+[36minfo[39m: Java version is: 1.8.0_131
+[36minfo[39m: [debug] Checking whether adb is present
+[36minfo[39m: [debug] Using adb from I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe
+[36minfo[39m: [debug] Using fast reset? true
+[36minfo[39m: [debug] Preparing device for session
+[36minfo[39m: [debug] Checking whether app is actually present
+[36minfo[39m: Retrieving device
+[36minfo[39m: [debug] Trying to find a connected android device
+[36minfo[39m: [debug] Getting connected devices...
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe devices
+[36minfo[39m: [debug] 1 device(s) connected
+[36minfo[39m: Found device HGA7N5BS
+[36minfo[39m: [debug] Setting device id to HGA7N5BS
+[36minfo[39m: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS wait-for-device
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "echo 'ready'"
+[36minfo[39m: [debug] Starting logcat capture
+[36minfo[39m: [debug] Getting device API level
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "getprop ro.build.version.sdk"
+[36minfo[39m: [debug] Device is at API Level 22
+[36minfo[39m: Device API level is: 22
+[36minfo[39m: [debug] Extracting strings for language: default
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "getprop persist.sys.language"
+[36minfo[39m: [debug] Current device persist.sys.language: zh
+[36minfo[39m: [debug] java -jar "G:\Program Files\Appium\node_modules\appium\node_modules\appium-adb\jars\appium_apk_tools.jar" "stringsFromApk" "G:\Users\HYM\Desktop\FlyBand.apk" "G:\Users\HYM\AppData\Local\Temp\com.createbest.app.a16.flyband" zh
+[36minfo[39m: [debug] Reading strings from converted strings.json
+[36minfo[39m: [debug] Setting language to default
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS push "G:\\Users\\HYM\\AppData\\Local\\Temp\\com.createbest.app.a16.flyband\\strings.json" /data/local/tmp
+[36minfo[39m: [debug] Checking whether aapt is present
+[36minfo[39m: [debug] Using aapt from I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\build-tools\android-4.4\aapt.exe
+[36minfo[39m: [debug] Retrieving process from manifest.
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\build-tools\android-4.4\aapt.exe dump xmltree G:\Users\HYM\Desktop\FlyBand.apk AndroidManifest.xml
+[36minfo[39m: [debug] Set app process to: com.createbest.app.a16.flyband
+[36minfo[39m: [debug] Not uninstalling app since server not started with --full-reset
+[36minfo[39m: [debug] noSign capability set to true, skipping checking and signing of app
+[36minfo[39m: [debug] MD5 for app is 9cdff0a1057565021f33965577b50e04
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "ls /data/local/tmp/9cdff0a1057565021f33965577b50e04.apk"
+[36minfo[39m: [debug] Getting install status for com.createbest.app.a16.flyband
+[36minfo[39m: [debug] Getting device API level
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "getprop ro.build.version.sdk"
+[36minfo[39m: [debug] Device is at API Level 22
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "pm list packages -3 com.createbest.app.a16.flyband"
+[36minfo[39m: [debug] App is installed
+[36minfo[39m: App is already installed, resetting app
+[36minfo[39m: [debug] Running fast reset (stop and clear)
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "am force-stop com.createbest.app.a16.flyband"
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "pm clear com.createbest.app.a16.flyband"
+[36minfo[39m: [debug] Forwarding system:2234 to device:4724
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS forward tcp:2234 tcp:4724
+[36minfo[39m: [debug] Pushing appium bootstrap to device...
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS push "G:\\Program Files\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+[36minfo[39m: [debug] Enabling Unicode keyboard support
+[36minfo[39m: [debug] Pushing unicode ime to device...
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS install "G:\Program Files\Appium\node_modules\appium\build\unicode_ime_apk\UnicodeIME-debug.apk"
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "settings get secure default_input_method"
+[36minfo[39m: [debug] Unsetting IME 'io.appium.android.ime/.UnicodeIME'
+[36minfo[39m: [debug] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "ime enable io.appium.android.ime/.UnicodeIME"
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "ime set io.appium.android.ime/.UnicodeIME"
+[36minfo[39m: Starting App
+[36minfo[39m: [debug] Attempting to kill all 'uiautomator' processes
+[36minfo[39m: [debug] Getting all processes with 'uiautomator'
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "ps 'uiautomator'"
+[36minfo[39m: [debug] No matching processes found
+[36minfo[39m: [debug] Running bootstrap
+[36minfo[39m: [debug] spawning: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.createbest.app.a16.flyband -e disableAndroidWatchers false
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Loading json...
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] json loading complete.
+[36minfo[39m: [debug] Waking up device if it's not alive
+[36minfo[39m: [debug] Pushing command to appium work queue: ["wake",{}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Client connected
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: wake
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "dumpsys window"
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+[36minfo[39m: [debug] Screen already unlocked, continuing.
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data\/local\/tmp"}
+[36minfo[39m: [debug] dataDir set to: /data/local/tmp
+[36minfo[39m: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+[36minfo[39m: [debug] Getting device API level
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "getprop ro.build.version.sdk"
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+[36minfo[39m: [debug] Device is at API Level 22
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.createbest.app.a16.flyband/com.cb.a16.guide.WelcomeActivity"
+[36minfo[39m: [debug] Waiting for pkg "com.createbest.app.a16.flyband" and activity "com.cb.a16.guide.WelcomeActivity" to be focused
+[36minfo[39m: [debug] Getting focused package and activity
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "dumpsys window windows"
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "getprop ro.build.version.release"
+[36minfo[39m: [debug] Device is at release version 5.1
+[36minfo[39m: [debug] Device launched! Ready for commands
+[36minfo[39m: [debug] Setting command timeout to 600 secs
+[36minfo[39m: [debug] Appium session started with sessionId b2822059-2487-4192-bbef-878c66c49c8f
+[36minfo[39m: [37m<-- POST /wd/hub/session [39m[36m303[39m[90m 21279.639 ms - 74[39m [90m[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f[39m [90m{}[39m
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"5.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"G:\\Users\\HYM\\Desktop\\FlyBand.apk","appPackage":"com.createbest.app.a16.flyband","appActivity":"com.cb.a16.guide.WelcomeActivity","noSign":true,"newCommandTimeout":"600","automationName":"uiautomator2","unicodeKeyboard":true,"udid":"HGA7N5BS","platformName":"Android","deviceName":"devicename","resetKeyboard":true},"app":"G:\\Users\\HYM\\Desktop\\FlyBand.apk","appPackage":"com.createbest.app.a16.flyband","appActivity":"com.cb.a16.guide.WelcomeActivity","noSign":true,"newCommandTimeout":"600","automationName":"uiautomator2","unicodeKeyboard":true,"udid":"HGA7N5BS","platformName":"Android","deviceName":"HGA7N5BS","resetKeyboard":true},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f [39m[32m200[39m[90m 15.862 ms - 975[39m [90m{"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"5.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"G:\\Users\\HYM\\Desktop\\FlyBand.apk","appPackage":"com.createbest.app.a16.flyband","appActivity":"com.cb.a16.guide.WelcomeActivity","noSign":true,"newCommandTimeout":"600","automationName":"uiautomator2","unicodeKeyboard":true,"udid":"HGA7N5BS","platformName":"Android","deviceName":"devicename","resetKeyboard":true},"app":"G:\\Users\\HYM\\Desktop\\FlyBand.apk","appPackage":"com.createbest.app.a16.flyband","appActivity":"com.cb.a16.guide.WelcomeActivity","noSign":true,"newCommandTimeout":"600","automationName":"uiautomator2","unicodeKeyboard":true,"udid":"HGA7N5BS","platformName":"Android","deviceName":"HGA7N5BS","resetKeyboard":true},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/timeouts[39m [90m{"type":"implicit","ms":10000}[39m
+[36minfo[39m: [debug] Set Android implicit wait to 10000ms
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/timeouts [39m[32m200[39m[90m 10.764 ms - 76[39m [90m{"status":0,"value":null,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/appium/device/current_activity[39m [90m{}[39m
+[36minfo[39m: [debug] Getting focused package and activity
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "dumpsys window windows"
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"com.cb.a16.guide.WelcomeActivity","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/appium/device/current_activity [39m[32m200[39m[90m 149.089 ms - 106[39m [90m{"status":0,"value":"com.cb.a16.guide.WelcomeActivity","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/source[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["source",{}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"source","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: source
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.LinearLayout index=\"0\" text=\"\" class=\"android.widget.LinearLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,50][720,1280]\" resource-id=\"android:id\/content\" instance=\"1\"><android.widget.RelativeLayout index=\"0\" text=\"\" class=\"android.widget.RelativeLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,50][720,1280]\" resource-id=\"\" instance=\"0\"\/><\/android.widget.FrameLayout><\/android.widget.LinearLayout><android.view.View index=\"1\" text=\"\" class=\"android.view.View\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,50]\" resource-id=\"android:id\/statusBarBackground\" instance=\"0\"\/><\/android.widget.FrameLayout><\/hierarchy>"}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.LinearLayout index=\"0\" text=\"\" class=\"android.widget.LinearLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"t...","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/source [39m[32m200[39m[90m 234.675 ms - 2302[39m [90m{"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.LinearLayout index=\"0\" text=\"\" class=\"android.widget.LinearLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"t...","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/appium/device/current_activity[39m [90m{}[39m
+[36minfo[39m: [debug] Getting focused package and activity
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "dumpsys window windows"
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"com.cb.a16.guide.WelcomeActivity","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/appium/device/current_activity [39m[32m200[39m[90m 149.939 ms - 106[39m [90m{"status":0,"value":"com.cb.a16.guide.WelcomeActivity","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/source[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["source",{}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"source","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: source
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.LinearLayout index=\"0\" text=\"\" class=\"android.widget.LinearLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,50][720,1280]\" resource-id=\"android:id\/content\" instance=\"1\"><android.widget.RelativeLayout index=\"0\" text=\"\" class=\"android.widget.RelativeLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,50][720,1280]\" resource-id=\"\" instance=\"0\"\/><\/android.widget.FrameLayout><\/android.widget.LinearLayout><android.view.View index=\"1\" text=\"\" class=\"android.view.View\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,50]\" resource-id=\"android:id\/statusBarBackground\" instance=\"0\"\/><\/android.widget.FrameLayout><\/hierarchy>"}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.LinearLayout index=\"0\" text=\"\" class=\"android.widget.LinearLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"t...","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/source [39m[32m200[39m[90m 47.844 ms - 2302[39m [90m{"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.LinearLayout index=\"0\" text=\"\" class=\"android.widget.LinearLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[0,0][720,1280]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"t...","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"开始使用"}[39m
+[33mwarn[39m: [DEPRECATED] The name locator strategy has been deprecated and will be removed.  Please use the accessibility id locator strategy instead.
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 186ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 1138ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 1754ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 2386ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 3016ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 3636ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 4225ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 4823ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 5412ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 6039ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 6676ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 7223ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 7924ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 8555ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 9191ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Condition unmet after 10189ms. Timing out.
+[36minfo[39m: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[31m500[39m[90m 10197.493 ms - 195[39m [90m[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size [39m[32m200[39m[90m 34.773 ms - 99[39m [90m{"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size [39m[32m200[39m[90m 29.035 ms - 99[39m [90m{"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/touch/perform[39m [90m{"actions":[{"action":"press","options":{"x":648,"y":640}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"x":72,"y":640}},{"action":"release","options":{}}]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["swipe",{"startX":648,"startY":640,"endX":72,"endY":640,"steps":28}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":648,"startY":640,"endX":72,"endY":640,"steps":28}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: swipe
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Swiping from [x=648.0, y=640.0] to [x=72.0, y=640.0] with steps: 28
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/touch/perform [39m[32m200[39m[90m 770.402 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"开始使用"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 1287ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 1891ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 2455ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 3065ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 3666ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 4304ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 4977ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 5579ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 6233ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 6872ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 9013ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 9635ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Condition unmet after 10227ms. Timing out.
+[36minfo[39m: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[31m500[39m[90m 10231.980 ms - 195[39m [90m[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size [39m[32m200[39m[90m 31.433 ms - 99[39m [90m{"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size [39m[32m200[39m[90m 30.527 ms - 99[39m [90m{"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/touch/perform[39m [90m{"actions":[{"action":"press","options":{"x":648,"y":640}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"x":72,"y":640}},{"action":"release","options":{}}]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["swipe",{"startX":648,"startY":640,"endX":72,"endY":640,"steps":28}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":648,"startY":640,"endX":72,"endY":640,"steps":28}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: swipe
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Swiping from [x=648.0, y=640.0] to [x=72.0, y=640.0] with steps: 28
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/touch/perform [39m[32m200[39m[90m 507.417 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"开始使用"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 1287ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 2671ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 3668ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 4313ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 5050ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 6154ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 6779ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 7439ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 8086ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Condition unmet after 10034ms. Timing out.
+[36minfo[39m: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[31m500[39m[90m 10042.843 ms - 195[39m [90m[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size [39m[32m200[39m[90m 30.780 ms - 99[39m [90m{"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/window/current/size [39m[32m200[39m[90m 25.218 ms - 99[39m [90m{"status":0,"value":{"height":1280,"width":720},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/touch/perform[39m [90m{"actions":[{"action":"press","options":{"x":648,"y":640}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"x":72,"y":640}},{"action":"release","options":{}}]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["swipe",{"startX":648,"startY":640,"endX":72,"endY":640,"steps":28}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":648,"startY":640,"endX":72,"endY":640,"steps":28}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: swipe
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Swiping from [x=648.0, y=640.0] to [x=72.0, y=640.0] with steps: 28
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/touch/perform [39m[32m200[39m[90m 522.260 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"开始使用"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[32m200[39m[90m 1318.649 ms - 87[39m [90m{"status":0,"value":{"ELEMENT":"1"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"开始使用"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"开始使用","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"开始使用","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 开始使用 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=开始使用, INSTANCE=0]
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"2"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[32m200[39m[90m 41.743 ms - 87[39m [90m{"status":0,"value":{"ELEMENT":"2"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element/2/click[39m [90m{"id":"2"}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"2"}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: click
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element/2/click [39m[32m200[39m[90m 243.779 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"输入账号"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"输入账号","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"输入账号","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 输入账号 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=输入账号, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=输入账号, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"3"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[32m200[39m[90m 912.393 ms - 87[39m [90m{"status":0,"value":{"ELEMENT":"3"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element/3/value[39m [90m{"id":"3","value":["13510526236"]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"3","text":"13510526236","replace":false,"unicodeKeyboard":true}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"3","text":"13510526236","replace":false,"unicodeKeyboard":true}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: setText
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using element passed in.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Text not cleared. Assuming remainder is hint text.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Sending plain text to element: 13510526236
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element/3/value [39m[32m200[39m[90m 6276.539 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"id","value":"com.createbest.app.a16.flyband:id/password_et"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/password_et","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/password_et","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/password_et using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/password_et]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"4"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[32m200[39m[90m 503.299 ms - 87[39m [90m{"status":0,"value":{"ELEMENT":"4"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element/4/value[39m [90m{"id":"4","value":["1234567"]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"4","text":"1234567","replace":false,"unicodeKeyboard":true}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"4","text":"1234567","replace":false,"unicodeKeyboard":true}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: setText
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using element passed in.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Sending plain text to element: 1234567
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element/4/value [39m[32m200[39m[90m 5414.040 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"登　录"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"登　录","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"登　录","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 登　录 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=登　录, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=登　录, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"5"}}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"5"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[32m200[39m[90m 510.593 ms - 87[39m [90m{"status":0,"value":{"ELEMENT":"5"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element/5/click[39m [90m{"id":"5"}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"5"}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"5"}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: click
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element/5/click [39m[32m200[39m[90m 406.344 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"确定"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 928ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 1983ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 2577ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 3201ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 4261ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 5199ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 6260ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 6921ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 7495ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 8221ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 9320ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"确定","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"确定","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 确定 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=确定, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Condition unmet after 10315ms. Timing out.
+[36minfo[39m: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[31m500[39m[90m 10320.243 ms - 195[39m [90m[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/appium/device/current_activity[39m [90m{}[39m
+[36minfo[39m: [debug] Getting focused package and activity
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "dumpsys window windows"
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"com.cb.a16.account.LoginActivity","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/appium/device/current_activity [39m[32m200[39m[90m 209.992 ms - 106[39m [90m{"status":0,"value":"com.cb.a16.account.LoginActivity","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/source[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["source",{}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"source","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: source
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] [APPIUM-UIAUTO] [debug] Returning result: {"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[195,572][525,758]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[220,592][500,728]\" resource-id=\"\" instance=\"1\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameL[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] ayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[220,592][500,728]\" resource-id=\"android:id\/content\" instance=\"2\"><android.widget.RelativeLayout index=\"0\" text=\"\" class=\"android.widget.RelativeLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[220,592][500,728]\" resource-id=\"\" instance=\"0\"><android.widget.ProgressBar index=\"0\" text=\"\" class=\"android.widget.ProgressBar\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[240,612][336,708]\" resource-id=\"com.createbest.app.a16.flyband:id\/loadingImageView\" instance=\"0\"\/><android.widget.TextView index=\"1\" text=\"正在处理\" class=\"android.widget.TextView\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[356,639][480,681]\" resource-id=\"com.createbest.app.a16.flyband:id\/id_tv_loadingmsg\" instance=\"0\"\/><\/android.widget.RelativeLayout><\/android.widget.FrameLayout><\/android.widget.FrameLayout><\/android.widget.FrameLayout><\/hierarchy>"}[/APPIUM-UIAUTO][39m
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[195,572][525,758]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[220,592][500,728]\" resource-id=\"\" instance=\"1\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enable...","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/source [39m[32m200[39m[90m 62.796 ms - 2847[39m [90m{"status":0,"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?><hierarchy rotation=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[195,572][525,758]\" resource-id=\"\" instance=\"0\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" scrollable=\"false\" long-clickable=\"false\" password=\"false\" selected=\"false\" bounds=\"[220,592][500,728]\" resource-id=\"\" instance=\"1\"><android.widget.FrameLayout index=\"0\" text=\"\" class=\"android.widget.FrameLayout\" package=\"com.createbest.app.a16.flyband\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enable...","sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"id","value":"com.createbest.app.a16.flyband:id/rl_layout_wrist"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 429ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 1491ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] Waited for 2029ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] Waited for 2562ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] Waited for 3417ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] Waited for 3953ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] Waited for 4515ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] Waited for 5053ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] Waited for 5607ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] Waited for 6161ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 6724ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 7284ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 7875ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] Waited for 8452ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 9463ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/rl_layout_wrist","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/rl_layout_wrist using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/rl_layout_wrist]
+[36minfo[39m: [debug] Condition unmet after 10462ms. Timing out.
+[36minfo[39m: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[31m500[39m[90m 10464.751 ms - 195[39m [90m[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"id","value":"com.createbest.app.a16.flyband:id/iv_titleleft"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] Waited for 58ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 981ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] Waited for 1547ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] Waited for 2378ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] Waited for 2919ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 3987ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] Waited for 4551ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] Waited for 5130ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] Waited for 5917ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] Waited for 6968ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 7941ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] Waited for 8508ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] Waited for 9064ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] Waited for 9959ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.createbest.app.a16.flyband:id/iv_titleleft","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding com.createbest.app.a16.flyband:id/iv_titleleft using ID with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.createbest.app.a16.flyband:id/iv_titleleft]
+[36minfo[39m: [debug] Condition unmet after 10525ms. Timing out.
+[36minfo[39m: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[31m500[39m[90m 10529.312 ms - 195[39m [90m[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element[39m [90m{"using":"name","value":"血　　压"}[39m
+[36minfo[39m: [debug] Waiting up to 10000ms for condition
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 68ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 672ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 1499ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 2459ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 3489ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 4133ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 5272ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 6383ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Waited for 7516ms so far
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 8112ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 8721ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 9403ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Waited for 9990ms so far
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"血　　压","context":"","multiple":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"血　　压","context":"","multiple":false}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: find
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Finding 血　　压 using NAME with the contextId:  multiple: false
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] Condition unmet after 10566ms. Timing out.
+[36minfo[39m: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f/element [39m[31m500[39m[90m 10570.738 ms - 195[39m [90m[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=血　　压, INSTANCE=0]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+[36minfo[39m: [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f[39m [90m{}[39m
+[36minfo[39m: Shutting down appium session
+[36minfo[39m: [debug] Pressing the HOME button
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "input keyevent 3"
+[36minfo[39m: [debug] Resetting IME to 'io.appium.android.ime/.UnicodeIME'
+[36minfo[39m: [debug] executing cmd: I:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platform-tools\adb.exe -s HGA7N5BS shell "ime set io.appium.android.ime/.UnicodeIME"
+[36minfo[39m: [debug] Stopping logcat capture
+[36minfo[39m: [debug] Logcat terminated with code null, signal SIGTERM
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"shutdown"}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type SHUTDOWN
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] [CDS]close[4724][39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Closed client connection
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=.[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 0[39m
+[36minfo[39m: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] Test results for WatcherResultPrinter=.[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] Time: 101.321[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] OK (1 test)[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: -1[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_RESULT: shortMsg=java.lang.SecurityException[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_RESULT: longMsg=Permission Denial: getIntentSender() from pid=9863, uid=2000, (need uid=1000) is not allowed to send as package android[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_CODE: 0[39m
+[36minfo[39m: [debug] UiAutomator shut down normally
+[36minfo[39m: [debug] Cleaning up android objects
+[36minfo[39m: [debug] Cleaning up appium session
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}
+[36minfo[39m: [37m<-- DELETE /wd/hub/session/b2822059-2487-4192-bbef-878c66c49c8f [39m[32m200[39m[90m 2002.442 ms - 76[39m [90m{"status":0,"value":null,"sessionId":"b2822059-2487-4192-bbef-878c66c49c8f"}[39m

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="127.0.0.1:21503"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="204.809">
+  <properties />
+  
+  
+            <testcase name="login" time="28.924" classname="cn.crazy.appium.testcases.ZhihuTest" />
+                <testcase name="login" time="29.323" classname="cn.crazy.appium.testcases.ZhihuTest" />
+                <testcase name="login" time="29.303" classname="cn.crazy.appium.testcases.ZhihuTest" />
+                <testcase name="login" time="29.001" classname="cn.crazy.appium.testcases.ZhihuTest" />
+                <testcase name="login" time="31.906" classname="cn.crazy.appium.testcases.ZhihuTest" />
+                <testcase name="login" time="27.856" classname="cn.crazy.appium.testcases.ZhihuTest" />
+                <testcase name="login" time="28.496" classname="cn.crazy.appium.testcases.ZhihuTest" />
+      
+</testsuite>
