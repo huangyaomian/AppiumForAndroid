@@ -5,10 +5,10 @@ import io.appium.java_client.android.AndroidElement;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import cn.crazy.appium.base.AndroidDriverBase;
 import cn.crazy.appium.util.GetByLocator;
 import cn.crazy.appium.util.Log;
-import cn.crazy.appium.util.RandomUtil;
 
 //import cn.crazy.appium.base.AndroidElementBase;
 
@@ -29,6 +29,37 @@ public class HomePage extends BasePage {
 		flag = community1.equals(community);
 		return flag;
 	}
+//	public void name() {
+//		System.out.println("--------------政通测试第一场第一次Action-------------");
+//		driver.findElement(By.name("发现")).click();
+//		driver.findElement(By.name("附近的人")).click();
+//		boolean flag= true;
+//		ArrayList<String> names = new ArrayList<>();
+//		while (flag) {
+//			flag = false;
+//			ArrayList<AndroidElement> elements = new ArrayList<>();
+//			elements = driver.findElements(By.id("这里面放用户名称id"));
+//			for (int i = 0; i < elements.size(); i++) {
+//				AndroidElement el = elements.get(i);
+//				String name = el.getText();
+//				if (!(names.contains(name))) {
+//					names.add(name);
+//					flag= true;
+//					el.click();
+//					driver.findElement(By.name("发现")).click();
+//					driver.findElement(By.id("发现")).click();
+//					driver.findElement(By.name("发现")).click();
+//					Thread.sleep(1000);
+//					driver.findElement(By.id("发现")).click();
+////					System.out.println("搞定" + i + "个");
+//				}else {
+//					System.out.println("这个用户已经添加过，跳过，添加下一个");
+//				}
+//			}
+//			driver.swipe(320, 1260, 320, 110, 1000);
+//		}
+//
+//	}
 
 	// 消息验证（物业公告）
 	public boolean message() throws Exception {
@@ -810,6 +841,9 @@ public class HomePage extends BasePage {
 		}
 		return true;
 	}
+	
+	
+	
 	
 
 

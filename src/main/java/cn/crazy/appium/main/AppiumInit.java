@@ -26,7 +26,7 @@ public class AppiumInit {
 //				classes.add("cn.crazy.appium.testcases.ZhihuTest");
 //				classes.add("cn.crazy.appium.testcases.PerInfoTest");
 //				classes.add("cn.crazy.appium.testcases.RegTest1");
-				classes.add("cn.crazy.appium.testcases.HomePageCase");
+				classes.add("cn.crazy.appium.testcases.WeChatCase");
 				XmlUtil.createTestngXml(classes);
 //				XmlUtil.createTestngXml("cn.crazy.appium.testcases.PerInfoTest");
 			} catch (Exception e) {

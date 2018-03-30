@@ -44,6 +44,7 @@ import cn.crazy.appium.util.Log;
  * @param <V>
  *
  */
+@SuppressWarnings("unchecked")
 public class AndroidDriverBase extends AndroidDriver<AndroidElement> {
 	
 	private Log logger=Log.getLogger(AndroidDriverBase.class);

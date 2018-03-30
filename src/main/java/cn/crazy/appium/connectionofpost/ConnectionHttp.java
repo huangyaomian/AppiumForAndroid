@@ -1,6 +1,5 @@
 package cn.crazy.appium.connectionofpost;
 
-import io.appium.java_client.android.AndroidElement;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

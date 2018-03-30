@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 /**
- * @author 狂沙 qq289303905
+ * @author 
  *
  */
 public class Log {

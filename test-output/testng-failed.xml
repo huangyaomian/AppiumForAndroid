@@ -7,18 +7,17 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="127.0.0.1:62001(failed)" parallel="tests">
+  <test name="c8ebc45e(failed)" parallel="tests">
     <parameter name="port" value="4723"/>
     <parameter name="udid" value="c8ebc45e"/>
     <classes>
-      <class name="cn.crazy.appium.testcases.communityActivityCase">
+      <class name="cn.crazy.appium.testcases.WeChatCase">
         <methods>
+          <include name="sreachAddProductCase"/>
           <include name="beforeClass"/>
-          <include name="activityPraiseCase"/>
-          <include name="quit"/>
-          <include name="afterMethod"/>
+          <include name="resetInput"/>
         </methods>
-      </class> <!-- cn.crazy.appium.testcases.communityActivityCase -->
+      </class> <!-- cn.crazy.appium.testcases.WeChatCase -->
     </classes>
-  </test> <!-- 127.0.0.1:62001(failed) -->
+  </test> <!-- c8ebc45e(failed) -->
 </suite> <!-- Failed suite [Suite] -->

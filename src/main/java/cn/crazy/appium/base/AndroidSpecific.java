@@ -2,7 +2,6 @@ package cn.crazy.appium.base;
 
 import java.util.List;
 
-import com.sun.jna.platform.win32.WinUser.INPUT;
 
 import cn.crazy.appium.util.DosCmd;
 
@@ -43,8 +42,8 @@ public class AndroidSpecific {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		AndroidSpecific as=new AndroidSpecific();
-		System.out.println(as.getDefaultInput("192.168.56.101:5555"));
-		wakeUp("192.168.56.101:5555");
+//		AndroidSpecific as=new AndroidSpecific();
+////		System.out.println(as.getDefaultInput("192.168.56.101:5555"));
+//		wakeUp("192.168.56.101:5555");
 	}
 }

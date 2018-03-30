@@ -1,10 +1,178 @@
-[Appium] Welcome to Appium v1.6.5
+[Appium] Welcome to Appium v1.7.1
 [Appium] Non-default server args:
 [Appium]   port: 4490
-[Appium]   bootstrapPort: 2233
+[Appium]   bootstrapPort: 2236
 [Appium]   udid: 127.0.0.1:62001
 [Appium] Deprecated server args:
 [Appium]   -U,--udid => --default-capabilities '{"udid":"127.0.0.1:62001"}'
 [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
 [Appium]   udid: '127.0.0.1:62001'
 [Appium] Appium REST http interface listener started on 0.0.0.0:4490
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"app":"D:\\hym\\apk\\hx_andr_app_www_1.86-201709291556.apk","appPackage":"com.hx.socialapp","appActivity":".SplashActivity","noReset":"True","noSign":"True","newCommandTimeout":"1200","unicodeKeyboard":"True","udid":"127.0.0.1:62001","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},"requiredCapabilities":{},"capabilities":{"desiredCapabilities":{"app":"D:\\hym\\apk\\hx_andr_app_www_1.86-201709291556.apk","appPackage":"com.hx.socialapp","appActivity":".SplashActivity","noReset":"True","noSign":"True","newCommandTimeout":"1200","unicodeKeyboard":"True","udid":"127.0.0.1:62001","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},"requiredCapabilities":{},"alwaysMatch":{"platformName":"Android"},"firstMatch":[]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"D:\\hym\\apk\\hx_andr_app_www_1.86-201709291556.apk","appPackage":"com.hx.socialapp","appActivity":".SplashActivity","noReset":"True","noSign":"True","newCommandTimeout":"1200","unicodeKeyboard":"True","udid":"127.0.0.1:62001","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},{},{"desiredCapabilities":{"app":"D:\\hym\\apk\\hx_andr_app_www_1.86-201709291556.apk","appPackage":"com.hx.socialapp","appActivity":".SplashActivity","noReset":"True","noSign":"True","newCommandTimeout":"1200","unicodeKeyboard":"True","udid":"127.0.0.1:62001","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},"requiredCapabilities":{},"alwaysMatch":{"platformName":"Android"},"firstMatch":[]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1521529457559 (15:04:17 GMT+0800 (中国标准时间))
+[Appium] Creating new AndroidDriver (v1.28.1) session
+[Appium] Capabilities:
+[Appium]   app: 'D:\\hym\\apk\\hx_andr_app_www_1.86-201709291556.apk'
+[Appium]   appPackage: 'com.hx.socialapp'
+[Appium]   appActivity: '.SplashActivity'
+[Appium]   noReset: 'True'
+[Appium]   noSign: 'True'
+[Appium]   newCommandTimeout: '1200'
+[Appium]   unicodeKeyboard: 'True'
+[Appium]   udid: '127.0.0.1:62001'
+[Appium]   platformName: 'Android'
+[Appium]   deviceName: 'devicename'
+[Appium]   resetKeyboard: 'True'
+[BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'resetKeyboard' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'noSign' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'newCommandTimeout' changed from string ('1200') to integer (1200). This may cause unexpected behavior
+[BaseDriver] Session created with session id: 737becbc-d660-4149-93fd-5a7733179b6d
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_141
+[ADB] Checking whether adb is present
+[ADB] Using adb.exe from D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 127.0.0.1:62001
+[ADB] Checking whether adb is present
+[ADB] Using adb.exe from D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe
+[debug] [ADB] Setting device id to 127.0.0.1:62001
+[BaseDriver] Using local app 'D:\hym\apk\hx_andr_app_www_1.86-201709291556.apk'
+[debug] [AndroidDriver] Checking whether app is actually present
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Enabling Unicode keyboard support
+[debug] [AndroidDriver] Pushing unicode ime to device...
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","settings","get","secure","default_input_method"]
+[debug] [AndroidDriver] Unsetting previous IME io.appium.android.ime/.UnicodeIME
+[debug] [AndroidDriver] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","ime","enable","io.appium.android.ime/.UnicodeIME"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","ime","set","io.appium.android.ime/.UnicodeIME"]
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Uninstalling and re-installing 'io.appium.settings'
+[debug] [ADB] Uninstalling io.appium.settings
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","pm","list","packages","io.appium.settings"]
+[debug] [ADB] App is installed
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","am","force-stop","io.appium.settings"]
+[HTTP] <-- POST /wd/hub/session - - ms - - 
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","uninstall","io.appium.settings"]
+[debug] [ADB] ADB command output: Success
+[ADB] io.appium.settings was successfully uninstalled
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","pm","list","packages","io.appium.settings"]
+[debug] [ADB] App is not installed
+[debug] [ADB] App 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\app\build\outputs\apk\settings_apk-debug.apk' not installed. Installing
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\io.appium.settings\\app\\build\\outputs\\apk\\settings_apk-debug.apk"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Current device property 'ro.build.version.sdk': 19
+[debug] [ADB] Device API level: 19
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","dumpsys","package","io.appium.settings"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","ps"]
+[debug] [ADB] Device API level: 19
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[debug] [ADB] Device API level: 19
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","settings","put","secure","mock_location","1"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Current device property 'ro.build.version.release': 4.4.2
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","wm","size"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","getprop","ro.product.model"]
+[debug] [ADB] Current device property 'ro.product.model': MI 2
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","getprop","ro.product.manufacturer"]
+[debug] [ADB] Current device property 'ro.product.manufacturer': Xiaomi
+[AndroidDriver] Remote apk path is /data/local/tmp/039697798bf2c3e9cf4ab1050d73aecd.apk
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","ls","/data/local/tmp/039697798bf2c3e9cf4ab1050d73aecd.apk"]
+[debug] [AndroidDriver] Checking if app is installed
+[debug] [ADB] Getting install status for com.hx.socialapp
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","pm","list","packages","com.hx.socialapp"]
+[debug] [ADB] App is installed
+[debug] [AndroidDriver] Extracting strings from apk D:\hym\apk\hx_andr_app_www_1.86-201709291556.apk null C:\Users\ADMINI~1\AppData\Local\Temp\com.hx.socialapp
+[debug] [ADB] Extracting strings for language: default
+[debug] [ADB] Device API level: 19
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","getprop","persist.sys.language"]
+[debug] [ADB] Current device property 'persist.sys.language': zh
+[debug] [ADB] No strings.xml for language 'zh', getting default strings.xml
+[debug] [ADB] Reading strings from converted strings.json
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","push","C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\com.hx.socialapp\\strings.json","/data/local/tmp"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 2236 to device: 4724
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","forward","tcp:2236","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","push","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:62001","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.hx.socialapp","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [UiAutomator] Moving to state 'online'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Loading json...
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Device API level: 19
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:62001","shell","am","start","-W","-n","com.hx.socialapp/.SplashActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 737becbc-d660-4149-93fd-5a7733179b6d added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1521529471371 (15:04:31 GMT+0800 (中国标准时间))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"D:\\hym\\apk\\hx_andr_app_www_1.86-201709291556.apk","appPackage":"com.hx.socialapp","appActivity":".SplashActivity","noReset":true,"noSign":true,"newCommandTimeout":1200,"unicodeKeyboard":true,"udid":"127.0.0.1:62001","platformName":"Android","deviceName":"devicename","resetKeyboard":true},"app":"D:\\hym\\apk\\hx_andr_app_www_1.86-201709291556.apk","appPackage":"com.hx.socialapp","appActivity":".SplashActivity","noReset":true,"noSign":true,"newCommandTimeout":1200,"unicodeKeyboard":true,"udid":"127.0.0.1:62001","platformName":"Android","deviceName":"127.0.0.1:62001","resetKeyboard":true,"deviceUDID":"127.0.0.1:62001","platformVersion":"4.4.2","deviceScreenSize":"1080x1920","deviceModel":"MI 2","deviceManufacturer":"Xiaomi"}

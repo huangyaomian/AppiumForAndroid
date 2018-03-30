@@ -147,6 +147,12 @@ public class HomePageCase extends CaseBaseTest{
 //		as.assertEquals(flag, true, "验证生活服务中修改地址截图");
 //	}
 //	
+	//执行朋友圈点赞后取消点赞。
+	@Test(priority=8)
+	public void lifeAddressCase() throws Exception{
+		boolean flag = homeTest.lifeAddress();
+		as.assertEquals(flag, true, "验证生活服务中修改地址截图");
+	}
 	@AfterMethod
 	public void afterMethod(){
 //		driver.resetApp();

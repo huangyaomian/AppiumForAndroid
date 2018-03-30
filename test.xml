@@ -19,7 +19,6 @@
         <classes>
 			<class name="cn.crazy.appium.testcases.Test111"/>
             <class name="cn.crazy.appium.testcases.Test222"/>
-            <class name="cn.crazy.appium.testcases.Test333"/>
         </classes>
     </test>
     </tests>

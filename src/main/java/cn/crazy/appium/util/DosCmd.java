@@ -130,10 +130,10 @@ public class DosCmd {
 	public static void main(String[] args) throws Exception {
 		System.out.println(System.getProperty("os.name"));
 		DosCmd dc=new DosCmd();
-//		List<String> devicesList=dc.execCmdConsole("appium");
-//		for (String string : devicesList) {
-//			System.out.println(string);
-//		}
-//		dc.execCmdInput("22222222");
+		List<String> devicesList=dc.execCmdConsole("appium");
+		dc.killServer();
+		for (String string : devicesList) {
+			System.out.println(string);
+		}
 	}
 }

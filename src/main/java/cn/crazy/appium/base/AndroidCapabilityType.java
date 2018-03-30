@@ -1,6 +1,5 @@
 package cn.crazy.appium.base;
 
-import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -11,5 +10,6 @@ public interface AndroidCapabilityType extends MobileCapabilityType {
 	String AUTO_LAUNCH="autoLaunch";
 	String NEW_COMMAND_TIMEOUT = "newCommandTimeout";
 	String UI_AUTOMATOR_2 = "uiautomator2";
+	String NO_RESET = "noReset";
 	
 }

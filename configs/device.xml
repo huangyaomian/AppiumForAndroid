@@ -2,7 +2,7 @@
 
 <Device name="appiumstartlist">
     <deviceId id="0">
-        <deviceName>127.0.0.1:62001</deviceName>
+        <deviceName>c8ebc45e</deviceName>
         <appiumPort>4490</appiumPort>
     </deviceId>
 </Device>

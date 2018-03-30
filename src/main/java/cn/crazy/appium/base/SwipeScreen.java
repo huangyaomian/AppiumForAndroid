@@ -1,6 +1,5 @@
 package cn.crazy.appium.base;
 
-import org.openqa.selenium.By;
 
 public class SwipeScreen {
 	private AndroidDriverBase driver;

@@ -1,6 +1,5 @@
 package cn.crazy.appium.base;
 
-import cn.crazy.appium.util.ProUtil;
 
 public class CrazyPath {
 	public static String globalPath="configs/global.properties";

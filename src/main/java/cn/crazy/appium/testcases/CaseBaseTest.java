@@ -21,7 +21,7 @@ public class CaseBaseTest {
 		String input=as.getDefaultInput(udid);
 		System.out.println("连接"+udid+"端口"+port);
 		System.out.println("开始创建server连接");
-		 driver = new AndroidDriverBase(server, port, capsPath, udid, input);
-		 return driver;
+		driver = new AndroidDriverBase(server, port, capsPath, udid, input);
+		return driver;
 	}
 }

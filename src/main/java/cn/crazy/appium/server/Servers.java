@@ -103,6 +103,10 @@ public class Servers {
 		if(startCommand.size()>0){
 			for(String s:startCommand){
 				dos.execCmd(s);
+				System.out.println("正在开启服务请等待三秒");
+				if (startCommand.size()>1) {
+					Thread.sleep(3000);
+				}
 			}
 			flag=true;
 		}else{

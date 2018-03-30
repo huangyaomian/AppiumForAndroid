@@ -18,10 +18,11 @@ public class CrazyCapabilities {
 			caps.setCapability(AndroidCapabilityType.DEVICE_NAME, p.getPro(AndroidCapabilityType.DEVICE_NAME));
 			caps.setCapability("appPackage", p.getPro("appPackage"));
 			caps.setCapability("appActivity", p.getPro("appActivity"));
+			caps.setCapability(AndroidCapabilityType.NO_RESET, p.getPro(AndroidCapabilityType.NO_RESET)); //不需要再次安装
 			caps.setCapability(AndroidCapabilityType.NO_SIGN, p.getPro(AndroidCapabilityType.NO_SIGN));
 			caps.setCapability(AndroidCapabilityType.UNICODE_KEY_BOARD, p.getPro(AndroidCapabilityType.UNICODE_KEY_BOARD));
 			caps.setCapability(AndroidCapabilityType.RESET_KEY_BOARD, p.getPro(AndroidCapabilityType.RESET_KEY_BOARD));
-			caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AndroidCapabilityType.UI_AUTOMATOR_2);
+//			caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AndroidCapabilityType.UI_AUTOMATOR_2);
 			caps.setCapability(AndroidCapabilityType.UDID,udid);
 			caps.setCapability(AndroidCapabilityType.NEW_COMMAND_TIMEOUT, p.getPro(AndroidCapabilityType.NEW_COMMAND_TIMEOUT));
 		} catch (Exception e) {
