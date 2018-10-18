@@ -22,7 +22,7 @@ public class CrazyCapabilities {
 			caps.setCapability(AndroidCapabilityType.NO_SIGN, p.getPro(AndroidCapabilityType.NO_SIGN));
 			caps.setCapability(AndroidCapabilityType.UNICODE_KEY_BOARD, p.getPro(AndroidCapabilityType.UNICODE_KEY_BOARD));
 			caps.setCapability(AndroidCapabilityType.RESET_KEY_BOARD, p.getPro(AndroidCapabilityType.RESET_KEY_BOARD));
-//			caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AndroidCapabilityType.UI_AUTOMATOR_2);
+			caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AndroidCapabilityType.UI_AUTOMATOR_2);
 			caps.setCapability(AndroidCapabilityType.UDID,udid);
 			caps.setCapability(AndroidCapabilityType.NEW_COMMAND_TIMEOUT, p.getPro(AndroidCapabilityType.NEW_COMMAND_TIMEOUT));
 		} catch (Exception e) {

@@ -125,7 +125,7 @@ public class RandomUtil {
 //		System.out.println(r.nextDouble());
 		//System.out.println(getRndStrZhByLen(5));
 //		System.out.println(randomInt(5,10));
-		String s="135"+getRndNumByLen(8);
+		String s="135"+getRndNumByLen(2);
 		System.out.println(s);
 	}
 

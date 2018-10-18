@@ -23,10 +23,15 @@ public class AppiumInit {
 			}
 			try {
 				List<String> classes=new ArrayList<String>();
-//				classes.add("cn.crazy.appium.testcases.ZhihuTest");
-//				classes.add("cn.crazy.appium.testcases.PerInfoTest");
-//				classes.add("cn.crazy.appium.testcases.RegTest1");
-				classes.add("cn.crazy.appium.testcases.WeChatCase");
+				classes.add("cn.crazy.appium.testcases.LoginNewCase");
+				classes.add("cn.crazy.appium.testcases.ChooseAreaCase");
+				classes.add("cn.crazy.appium.testcases.intallStoreCase");
+				classes.add("cn.crazy.appium.testcases.OnStoreCase");
+				classes.add("cn.crazy.appium.testcases.NeighborhoodCase");
+				classes.add("cn.crazy.appium.testcases.MeCase");
+//				classes.add("cn.crazy.appium.testcases.JoinGroupCase");
+				classes.add("cn.crazy.appium.testcases.OffStoreCase");
+				classes.add("cn.crazy.appium.testcases.UserDetailCase");
 				XmlUtil.createTestngXml(classes);
 //				XmlUtil.createTestngXml("cn.crazy.appium.testcases.PerInfoTest");
 			} catch (Exception e) {

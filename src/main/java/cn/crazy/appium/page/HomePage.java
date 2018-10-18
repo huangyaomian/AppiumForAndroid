@@ -21,7 +21,7 @@ public class HomePage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	// 标题栏显示小罗小区
+	// 
 	public boolean titleText() throws Exception {
 		boolean flag = true;
 		community = driver.findElement(GetByLocator.getLocator("titleText")).getText();

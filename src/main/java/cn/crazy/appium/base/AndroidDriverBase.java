@@ -30,6 +30,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import cn.crazy.appium.util.DosCmd;
 import cn.crazy.appium.util.Log;
 /**
@@ -49,7 +50,7 @@ public class AndroidDriverBase extends AndroidDriver<AndroidElement> {
 	
 	private Log logger=Log.getLogger(AndroidDriverBase.class);
 	public  String input;
-	public  String udid;
+	public static  String udid;
 	/**
 	 * 构造方法
 	 * @param remoteAddress
@@ -125,7 +126,7 @@ public class AndroidDriverBase extends AndroidDriver<AndroidElement> {
 	/**
 	 * 在指定超时时间内元素是否存在，如存在则立即返回结果，如不存在则在超时后返回结果
 	 * @param by 定位对象
-	 * @param timeout 超时时间
+	 * @param timeout 超时时间秒
 	 * @return 指定时间内任意时间该元素出现则停止等待返回true，指定时间内没出现则返回false
 	 */
 	public boolean isElementExist(By by,int timeout){
@@ -234,17 +235,6 @@ public class AndroidDriverBase extends AndroidDriver<AndroidElement> {
 		}
 	}
 	
-	public AndroidElementBase findElementMy(By by){
-		try {
-			AndroidElementBase element=(AndroidElementBase) super.findElement(by);
-			return element;
-		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println("element is null");
-			logger.debug("element is null");
-			return null;
-		}
-	}
 	
 //	 @Override 
 	 public List<AndroidElement> findElements(By by) {
@@ -257,17 +247,6 @@ public class AndroidDriverBase extends AndroidDriver<AndroidElement> {
 				return null;
 			}
 	    }
-	 
-//	 public List<AndroidElementBase> findElementsMy(By by) {
-//	    	try {
-//	    		 return super.findElements(by);
-//			} catch (Exception e) {
-//				// TODO: handle exception
-//				System.out.println("element is null");
-//				logger.debug("element is null");
-//				return null;
-//			}
-//	    }
 	 
 	
 	/**
@@ -785,6 +764,14 @@ public class AndroidDriverBase extends AndroidDriver<AndroidElement> {
 	}
 	
 	/**
+	 * 设备键盘操作
+	 */
+	public void pressAny(int num){
+		this.wait(500);
+		super.pressKeyCode(num);
+	}
+	
+	/**
 	 * 手机键盘删除操作
 	 */
 	public void pressBackspace(){
@@ -945,5 +932,6 @@ public class AndroidDriverBase extends AndroidDriver<AndroidElement> {
 	public void swipe(int startx, int starty, int endx, int endy, int seconds) {
         (new TouchAction(this)).press(startx, starty).waitAction(Duration.ofMillis(seconds)).moveTo(endx, endy).release().perform();
     }
-    
+	
+	
 }

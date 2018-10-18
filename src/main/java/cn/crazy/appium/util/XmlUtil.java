@@ -98,6 +98,10 @@ public class XmlUtil {
 		listener1.addAttribute("class-name", "org.uncommons.reportng.HTMLReporter");
 		Element listener2=listeners.addElement("listener");
 		listener2.addAttribute("class-name", "org.uncommons.reportng.JUnitXMLReporter");
+		Element listener3=listeners.addElement("listener");
+		listener3.addAttribute("class-name", "cn.crazy.appium.testng.RetryListener");
+		Element listener4=listeners.addElement("listener");
+		listener4.addAttribute("class-name", "cn.crazy.appium.testng.TestngListener");
 		List<String> s=readXML("configs/device.xml");
 		//{192.168.56.101:5555,4490,192.168.56.102:5555,4491,xxx,4492,yyy,4493}
 		for(int j=0;j<deviceList.size();j++){
@@ -144,6 +148,10 @@ public class XmlUtil {
 		listener1.addAttribute("class-name", "org.uncommons.reportng.HTMLReporter");
 		Element listener2=listeners.addElement("listener");
 		listener2.addAttribute("class-name", "org.uncommons.reportng.JUnitXMLReporter");
+		Element listener3=listeners.addElement("listener");
+		listener3.addAttribute("class-name", "cn.crazy.appium.testng.RetryListener");
+		Element listener4=listeners.addElement("listener");
+		listener4.addAttribute("class-name", "cn.crazy.appium.testng.TestngListener");
 		List<String> s=readXML("configs/device.xml");
 		//{192.168.56.101:5555,4490,192.168.56.102:5555,4491,xxx,4492,yyy,4493}
 		for(int j=0;j<deviceList.size();j++){
@@ -192,6 +200,10 @@ public class XmlUtil {
 		listener1.addAttribute("class-name", "org.uncommons.reportng.HTMLReporter");
 		Element listener2=listeners.addElement("listener");
 		listener2.addAttribute("class-name", "org.uncommons.reportng.JUnitXMLReporter");
+		Element listener3=listeners.addElement("listener");
+		listener3.addAttribute("class-name", "cn.crazy.appium.testng.RetryListener");
+		Element listener4=listeners.addElement("listener");
+		listener4.addAttribute("class-name", "cn.crazy.appium.testng.TestngListener");
 		List<String> s=readXML("configs/device.xml");
 		//{192.168.56.101:5555,4490,192.168.56.102:5555,4491,xxx,4492,yyy,4493}
 		for(int j=0;j<deviceList.size();j++){

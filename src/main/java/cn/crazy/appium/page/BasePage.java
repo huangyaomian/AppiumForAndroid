@@ -4,6 +4,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.AndroidKeyCode;
 
+import java.text.DecimalFormat;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,12 +12,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.remote.DriverCommand;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.remote.Response;
 
+import bsh.This;
 import cn.crazy.appium.base.AndroidDriverBase;
-import cn.crazy.appium.base.AndroidElementBase;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -39,7 +41,6 @@ public class BasePage extends RemoteWebElement {
 	public String getPageSource() {
 		return driver.getPageSouce();
 	}
-	
 	
 	
 	@Override
@@ -141,15 +142,6 @@ public class BasePage extends RemoteWebElement {
 			System.out.println("点击失败，元素没有定位到，是null");
 		}
 	}
-	
-	// 点击
-		public void click(AndroidElementBase element) {
-			if (element != null) {
-				element.click();
-			} else {
-				System.out.println("点击失败，元素没有定位到，是null");
-			}
-		}
 
 	// 定位并点击
 	public void click(By by) {
@@ -356,9 +348,191 @@ public class BasePage extends RemoteWebElement {
 	 * @throws 
 	 */
 	public String getNumForString(String string) {
-		String regEx="[^0-9]";
-		Pattern p = Pattern.compile(regEx);
-		Matcher m = p.matcher(string);
-		return m.replaceAll("").trim();
+		// 需要取整数和小数的字符串
+        String str;
+        // 控制正则表达式的匹配行为的参数(小数)
+        Pattern p = Pattern.compile("(\\d+\\.\\d+)");
+        //Matcher类的构造方法也是私有的,不能随意创建,只能通过Pattern.matcher(CharSequence input)方法得到该类的实例. 
+        Matcher m = p.matcher(string);
+        //m.find用来判断该字符串中是否含有与"(\\d+\\.\\d+)"相匹配的子串
+        if (m.find()) {
+            //如果有相匹配的,则判断是否为null操作
+            //group()中的参数：0表示匹配整个正则，1表示匹配第一个括号的正则,2表示匹配第二个正则,在这只有一个括号,即1和0是一样的
+            str = m.group(1) == null ? "" : m.group(1);
+        } else {
+            //如果匹配不到小数，就进行整数匹配
+            p = Pattern.compile("(\\d+)");
+            m = p.matcher(string);
+            if (m.find()) {
+                //如果有整数相匹配
+                str = m.group(1) == null ? "" : m.group(1);
+            } else {
+                //如果没有小数和整数相匹配,即字符串中没有整数和小数，就设为空
+                str = "";
+            }
+        }
+        return str;
 	}
+	
+	/**
+	 * 模拟回车键
+	 * @throws 
+	 */
+	public void pressEnter() {
+		driver.pressEnter();
+	}
+	
+	/**
+	 * 模拟键盘操作
+	 * @throws num 按键值  
+	 */
+	public void pressAny(int num){
+		driver.pressKeyCode(num);
+	}
+	
+	/**
+	 * 执行adb命令
+	 * @param s 要执行的命令
+	 */
+	public void excuteAdbShell(String s) {
+		Runtime runtime=Runtime.getRuntime();
+		try{
+			runtime.exec(s);
+		}catch(Exception e){
+			System.out.println("执行命令:"+s+"出错");
+		}
+	}
+	
+	/**
+	 * 模拟微信输入支付密码,先获取整个键盘的长宽
+	 * @throws 
+	 */
+	public void inputPwdForweChat(int[] num) {
+		AndroidElement element = driver.findElement(By.id("com.tencent.mm:id/aam"));
+		int elementY = element.getLocation().getY();
+		int elementHeight = element.getSize().getHeight();
+		int keyHeight = driver.manage().window().getSize().getHeight() - (elementHeight + elementY);
+		int keyWidth = driver.manage().window().getSize().getWidth();
+		for (int i = 0; i < num.length; i++) {
+			int x = keyWidth/3;
+			int y = keyHeight/4;
+			switch (num[i]) {
+			case 0:
+				driver.clickByCoordinate(keyWidth/2, (elementHeight + elementY)+(y/2)+(3*y));
+				break;
+			case 1:
+				driver.clickByCoordinate((keyWidth/2)-x, (elementHeight + elementY)+(y/2));
+				break;
+			case 2:
+				driver.clickByCoordinate(keyWidth/2, (elementHeight + elementY)+(y/2));
+				break;
+			case 3:
+				driver.clickByCoordinate((keyWidth/2)+x, (elementHeight + elementY)+(y/2));
+				break;
+			case 4:
+				driver.clickByCoordinate((keyWidth/2)-x, (elementHeight + elementY)+(y/2)+y);
+				break;
+			case 5:
+				driver.clickByCoordinate(keyWidth/2, (elementHeight + elementY)+(y/2)+y);
+				break;
+			case 6:
+				driver.clickByCoordinate((keyWidth/2)+x, (elementHeight + elementY)+(y/2)+y);
+				break;
+			case 7:
+				driver.clickByCoordinate((keyWidth/2)-x, (elementHeight + elementY)+(y/2)+(2*y));
+				break;
+			case 8:
+				driver.clickByCoordinate(keyWidth/2, (elementHeight + elementY)+(y/2)+(2*y));
+				break;
+			case 9:
+				driver.clickByCoordinate((keyWidth/2)+x, (elementHeight + elementY)+(y/2)+(2*y));
+				break;
+
+			default:
+				break;
+			}
+		}
+	}
+	
+	/**
+	 * 安全键盘输入密码，4行3列的
+	 * @throws 
+	 */
+	public void inputPwds(int[] num , AndroidElement element) {
+		int elementY = element.getLocation().getY();
+		int elementHeight = element.getSize().getHeight();
+		int elementWidth = element.getSize().getWidth();
+//		int keyHeight = driver.manage().window().getSize().getHeight() - (elementHeight + elementY);
+//		int keyWidth = driver.manage().window().getSize().getWidth();
+		for (int i = 0; i < num.length; i++) {
+			int x = elementWidth/3;
+			int y = elementHeight/4;
+			switch (num[i]) {
+			case 0:
+				driver.clickByCoordinate(elementWidth/2, (elementY)+(y/2)+(3*y));
+				break;
+			case 1:
+				driver.clickByCoordinate((elementWidth/2)-x, (elementY)+(y/2));
+				break;
+			case 2:
+				driver.clickByCoordinate(elementWidth/2, (elementY)+(y/2));
+				break;
+			case 3:
+				driver.clickByCoordinate((elementWidth/2)+x, (elementY)+(y/2));
+				break;
+			case 4:
+				driver.clickByCoordinate((elementWidth/2)-x, (elementY)+(y/2)+y);
+				break;
+			case 5:
+				driver.clickByCoordinate(elementWidth/2, (elementY)+(y/2)+y);
+				break;
+			case 6:
+				driver.clickByCoordinate((elementWidth/2)+x, (elementY)+(y/2)+y);
+				break;
+			case 7:
+				driver.clickByCoordinate((elementWidth/2)-x, (elementY)+(y/2)+(2*y));
+				break;
+			case 8:
+				driver.clickByCoordinate(elementWidth/2, (elementY)+(y/2)+(2*y));
+				break;
+			case 9:
+				driver.clickByCoordinate((elementWidth/2)+x, (elementY)+(y/2)+(2*y));
+				break;
+
+			default:
+				break;
+			}
+		}
+	}
+
+
+
+	/**
+	 * 将数据保留两位小数
+	 */
+	public double getTwoDecimal(double num) {
+		DecimalFormat dFormat=new DecimalFormat("######0.00");
+		String yearString=dFormat.format(num);
+		Double temp= Double.valueOf(yearString);
+		return temp;
+	}
+	
+	/**
+	 * 使用tap方式点击
+	 */
+	public void singleTap(AndroidElement element) {
+		TouchActions action = new TouchActions(driver);
+		action.singleTap(element);
+		action.perform();
+	}
+	
+	/**
+	 * 使用tap方式点击
+	 */
+	public void singleTap(By by) {
+		TouchActions action = new TouchActions(driver);
+		action.singleTap(driver.findElement(by));
+		action.perform();
+	}
+
 }

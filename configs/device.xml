@@ -3,6 +3,6 @@
 <Device name="appiumstartlist">
     <deviceId id="0">
         <deviceName>c8ebc45e</deviceName>
-        <appiumPort>4490</appiumPort>
+        <appiumPort>4493</appiumPort>
     </deviceId>
 </Device>

@@ -52,24 +52,24 @@ public class Assertion  {
 	  }
 	  public void fail(String fileName){
 		  try {
-      			//System.out.println(CrazyPath.path+"\\images\\"+Thread.currentThread().getId()+fileName);
-      			Reporter.log("<a href=file:///C:/Users/Administrator/workspace/CrazyAppium1/test-output/html/images/" + Thread.currentThread().getId()+fileName + " target=_blank>Failed Screen Shot</a>", true);  
-      			Reporter.log("<img src=file:///C:/Users/Administrator/workspace/CrazyAppium1/test-output/html/images/"+Thread.currentThread().getId()+fileName +" style=width:30px;height:30px img/>", true);
-				driver.takeScreen(CrazyPath.path+"\\test-output\\html\\images\\",Thread.currentThread().getId()+fileName);
+			  String aString = "<a href=file:///" + CrazyPath.path + "/test-output/html/images/" + Thread.currentThread().getId()+fileName + " target=_blank> " + fileName +"失败截图"+ " </a>";
+			  String bString = "<img src=file:///" + CrazyPath.path + "/test-output/html/images/"+Thread.currentThread().getId()+fileName +" style=width:30px;height:30px /img>";
+			  Reporter.log(aString, true);  
+			  Reporter.log(bString, true);
+			  driver.takeScreen(CrazyPath.path+"\\test-output\\html\\images\\",Thread.currentThread().getId()+fileName);
 		  } catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
+			  // TODO Auto-generated catch block
+			  e1.printStackTrace();
 		  }
 		  Assert.fail();
 	  }
 	  public void fail(String fileName,String message){
 		  try {
-      			//System.out.println(CrazyPath.path+"\\images\\"+Thread.currentThread().getId()+fileName);
-//      			Reporter.log("<a href=http://localhost:8080/jenkins/job/test/crazyappium/images/" + Thread.currentThread().getId()+fileName + " target=_blank>Failed Screen Shot</a>", true);  
-//      			Reporter.log("<img src=http://localhost:8080/jenkins/job/test/crazyappium/images/"+Thread.currentThread().getId()+fileName +" style=width:30px;height:30px img/>", true);
-			  Reporter.log("<a href=file:///C:/Users/Administrator/workspace/CrazyAppium1/test-output/html/images/" + Thread.currentThread().getId()+fileName + " target=_blank>Failed Screen Shot</a>", true);  
-    			Reporter.log("<img src=file:///C:/Users/Administrator/workspace/CrazyAppium1/test-output/html/images/"+Thread.currentThread().getId()+fileName +" style=width:30px;height:30px img/>", true);
-				driver.takeScreen(CrazyPath.path+"\\test-output\\html\\images\\",Thread.currentThread().getId()+fileName);
+			  //Reporter.log("<a href=http://localhost:8080/jenkins/job/test/crazyappium/images/" + Thread.currentThread().getId()+fileName + " target=_blank>Failed Screen Shot</a>", true);  
+			  //Reporter.log("<img src=http://localhost:8080/jenkins/job/test/crazyappium/images/"+Thread.currentThread().getId()+fileName +" style=width:30px;height:30px img/>", true);
+			  Reporter.log("<a href=file:///" + CrazyPath.path + "/test-output/html/images/" + Thread.currentThread().getId()+fileName + " target=_blank> " + fileName +"失败截图"+ " </a>", true);  
+			  Reporter.log("<img src=file:///" + CrazyPath.path + "/test-output/html/images/"+Thread.currentThread().getId()+fileName +" style=width:30px;height:30px img/>", true);
+			  driver.takeScreen(CrazyPath.path+"\\test-output\\html\\images\\",Thread.currentThread().getId()+fileName);
 		  } catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

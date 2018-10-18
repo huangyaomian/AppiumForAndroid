@@ -12,67 +12,48 @@
 <body>
 <h1>c8ebc45e</h1>
 <p>
-  Test duration: 463.723s
+  Test duration: 17.266s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">cn.crazy.appium.testcases.WeChatCase</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">cn.crazy.appium.testcases.LoginNewCase</td>
       </tr>
             
 <tr>
   <td class="method">
-                  sreachAddProductCase
+                  afterMethod
       </td>
   <td class="duration">
-    430.246s
+    0.000s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;<br/>
-System info: host: &apos;PC-20170725TZYG&apos;, ip: &apos;192.168.4.50&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_141&apos;<br/>
-Driver info: cn.crazy.appium.base.AndroidDriverBase<br/>
-Capabilities [{appPackage=com.hx.socialapp, noReset=true, deviceName=c8ebc45e, platform=LINUX, deviceUDID=c8ebc45e, desired={app=D:\hym\apk\hx_andr_app_www_1.86-201709291556.apk, appPackage=com.hx.socialapp, appActivity=.SplashActivity, noReset=true, noSign=true, newCommandTimeout=1200, unicodeKeyboard=true, udid=c8ebc45e, platformName=Android, deviceName=devicename, resetKeyboard=true}, newCommandTimeout=1200, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=c8ebc45e, platformName=Android, deviceManufacturer=samsung, resetKeyboard=true, app=D:\hym\apk\hx_andr_app_www_1.86-201709291556.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, noSign=true, warnings={}, databaseEnabled=false, appActivity=.SplashActivity, locationContextEnabled=false, deviceModel=SM-C7000}]<br/>
-Session ID: 0b3d06f6-f7bf-42c5-8779-5269d9559ff8</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset<br/>
+Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'<br/>
+System info: host: 'PC-20170725TZYG', ip: '192.168.4.51', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_141'<br/>
+Driver info: driver.version: AndroidDriver</b></a><br />
     <div class="stackTrace" id="exception-0">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)<br />
-              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
-              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)<br />
-              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)<br />
-              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)<br />
-              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:104)<br />
               org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)<br />
-              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)<br />
               io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
               io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
               cn.crazy.appium.base.AndroidDriverBase.execute(AndroidDriverBase.java:1)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)<br />
-              io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)<br />
-              io.appium.java_client.MobileElement.execute(MobileElement.java:1)<br />
-              io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)<br />
-              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)<br />
-              cn.crazy.appium.page.WeChatPage.searchAdd(WeChatPage.java:94)<br />
-              cn.crazy.appium.testcases.WeChatCase.sreachAddProductCase(WeChatCase.java:57)<br />
+              io.appium.java_client.InteractsWithApps.resetApp(InteractsWithApps.java:65)<br />
+              cn.crazy.appium.testcases.LoginNewCase.afterMethod(LoginNewCase.java:59)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.lang.reflect.Method.invoke(Method.java:498)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:653)<br />
               org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
               org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
               org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
@@ -87,11 +68,139 @@ Session ID: 0b3d06f6-f7bf-42c5-8779-5269d9559ff8</b></a><br />
               java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
               java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
               java.lang.Thread.run(Thread.java:748)<br />
-                </div>
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.net.SocketException: Connection reset</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.net.SocketInputStream.read(SocketInputStream.java:210)<br />
+                      java.net.SocketInputStream.read(SocketInputStream.java:141)<br />
+                      org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:84)<br />
+                      org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)<br />
+                      org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)<br />
+                      org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)<br />
+                      org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)<br />
+                      org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)<br />
+                      org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)<br />
+                      org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)<br />
+                      org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)<br />
+                      org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)<br />
+                      org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)<br />
+                      org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)<br />
+                      org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)<br />
+                      org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)<br />
+                      org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)<br />
+                      org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)<br />
+                      org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)<br />
+                      org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)<br />
+                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+                      cn.crazy.appium.base.AndroidDriverBase.execute(AndroidDriverBase.java:1)<br />
+                      io.appium.java_client.InteractsWithApps.resetApp(InteractsWithApps.java:65)<br />
+                      cn.crazy.appium.testcases.LoginNewCase.afterMethod(LoginNewCase.java:59)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:498)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:653)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:335)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:369)<br />
+                      org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+                      java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+                      java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+                      java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+                      java.lang.Thread.run(Thread.java:748)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">cn.crazy.appium.testcases.LoginNewCase</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  afterMethod
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  quit
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
+
+
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">cn.crazy.appium.testcases.LoginNewCase</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  QQLoginCase
+      </td>
+  <td class="duration">
+    0.002s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  phoneLoginCase
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+    
+        
+
       </td>
 </tr>
       </table>
-
 
   
 </body>

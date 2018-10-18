@@ -6,18 +6,21 @@
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="cn.crazy.appium.testng.RetryListener"/>
+    <listener class-name="cn.crazy.appium.testng.TestngListener"/>
   </listeners>
   <test name="c8ebc45e(failed)" parallel="tests">
     <parameter name="port" value="4723"/>
     <parameter name="udid" value="c8ebc45e"/>
     <classes>
-      <class name="cn.crazy.appium.testcases.WeChatCase">
+      <class name="cn.crazy.appium.testcases.LoginNewCase">
         <methods>
-          <include name="sreachAddProductCase"/>
+          <include name="afterMethod"/>
+          <include name="QQLoginCase"/>
+          <include name="phoneLoginCase"/>
           <include name="beforeClass"/>
-          <include name="resetInput"/>
         </methods>
-      </class> <!-- cn.crazy.appium.testcases.WeChatCase -->
+      </class> <!-- cn.crazy.appium.testcases.LoginNewCase -->
     </classes>
   </test> <!-- c8ebc45e(failed) -->
 </suite> <!-- Failed suite [Suite] -->
